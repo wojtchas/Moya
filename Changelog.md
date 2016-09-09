@@ -1,5 +1,21 @@
 # Next
 
+- **Breaking Change** `fileName` and `mimeType` are now optional properties on a MultipartFormData object.
+- Correct Alamofire `appendBodyPart` method id called in MultipartFormData.
+- **Breaking Change** Removes `multipartBody` from TargetType protocol and adds a `task` instead.
+- **Breaking Change** Successful Response instances that have no data with them are now being converted to `.Success` `Result`s.
+- Adds Download and Upload Task type support to Moya.
+- Corrects SwiftLint warnings.
+- Separates `Moya.swift` into multiple files.
+- Updated `mapJSON` API to include an optional named parameter `failsOnEmptyData:` that when overriden returns an empty `NSNull()` result instead of throwing an error when the response data is empty.
+- Added `supportsMultipart` to the `Method` type, which helps determine whether to use `multipart/form-data` encoding.
+- Added `PATCH` and `CONNECT` to the `Method` cases which support multipart encoding.
+
+# 7.0.1
+
+- Added support for Swift 2.3
+- Updated dependencies versions
+
 # 7.0.0
 
 - **Breaking Change** Drops support for `RACSignal`.
