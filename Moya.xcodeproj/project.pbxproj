@@ -498,8 +498,8 @@
 			isa = PBXGroup;
 			children = (
 				468957E71DC026C8009515E5 /* Moya */,
-				0676A5DD1BFE80D3001C7F55 /* ReactiveCocoa */,
-				0676A5E31BFE80D3001C7F55 /* RxSwift */,
+				0676A5DD1BFE80D3001C7F55 /* ReactiveMoya */,
+				0676A5E31BFE80D3001C7F55 /* RxMoya */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -514,22 +514,22 @@
 			path = Plugins;
 			sourceTree = "<group>";
 		};
-		0676A5DD1BFE80D3001C7F55 /* ReactiveCocoa */ = {
+		0676A5DD1BFE80D3001C7F55 /* ReactiveMoya */ = {
 			isa = PBXGroup;
 			children = (
 				0676A5DE1BFE80D3001C7F55 /* Moya+ReactiveCocoa.swift */,
 				0676A5E01BFE80D3001C7F55 /* SignalProducer+Moya.swift */,
 			);
-			path = ReactiveCocoa;
+			path = ReactiveMoya;
 			sourceTree = "<group>";
 		};
-		0676A5E31BFE80D3001C7F55 /* RxSwift */ = {
+		0676A5E31BFE80D3001C7F55 /* RxMoya */ = {
 			isa = PBXGroup;
 			children = (
 				0676A5E41BFE80D3001C7F55 /* Moya+RxSwift.swift */,
 				0676A5E51BFE80D3001C7F55 /* Observable+Moya.swift */,
 			);
-			path = RxSwift;
+			path = RxMoya;
 			sourceTree = "<group>";
 		};
 		091F0D2A1BDE998F009D0A49 = {
