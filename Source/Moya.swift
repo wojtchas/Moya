@@ -344,7 +344,11 @@ internal extension MoyaProvider {
             for bodyPart in multipartBody {
                 switch bodyPart.provider {
                 case .Data(let data):
-                    form.appendBodyPart(data: data, name: bodyPart.name, fileName: bodyPart.fileName, mimeType: bodyPart.mimeType)
+                    if bodyPart.fileName.isEmpty {
+                        form.appendBodyPart(data: data, name: bodyPart.name)
+                    } else {
+                        form.appendBodyPart(data: data, name: bodyPart.name, fileName: bodyPart.fileName, mimeType: bodyPart.mimeType)
+                    }
                 case .File(let url):
                     form.appendBodyPart(fileURL: url, name: bodyPart.name, fileName: bodyPart.fileName, mimeType: bodyPart.mimeType)
                 case .Stream(let stream, let length):
